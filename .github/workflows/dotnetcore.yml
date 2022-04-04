@@ -84,7 +84,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        framework: [netcoreapp3.1, net6.0]
+        framework: [netcoreapp3.1, net6.0, net7.0]
     name: Debug Build & Test
     runs-on: ${{ matrix.os }}
     steps:
